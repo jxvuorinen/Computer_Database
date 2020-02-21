@@ -1,0 +1,27 @@
+{
+    "palvelin": "localhost",
+    "port": 3306,
+    "paakayttaja": "root",
+    "paakayttajanSalasana": "",
+    "kayttaja": "eevi",
+    "kayttajanSalasana": "rRt3Yfcn",
+    "poistaKayttaja": false,
+    "debugKaytossa": true,
+    "tietokanta": "tietokonetietokanta",
+    "taulut": [
+        {
+            "taulunNimi": "tietokone",
+            "sarakkeet": [
+                "tunniste integer primary key",
+                "nimi varchar(25) not null",
+                "tyyppi varchar(15) not null",
+                "hinta integer not null",
+                "lukumaara integer not null"
+            ],
+            "tiedot":[
+                [1,"MaxEffect 2000","palvelin", 200, 15],
+                [2, "FutSign 3000","pelikone",300, 30]
+            ]
+        }
+    ]
+}

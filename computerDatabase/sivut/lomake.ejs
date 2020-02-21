@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tyylit.css">
+    <title><% paaotsikko %></title>
+</head>
+
+<body>
+    <main>
+        <h1><%= otsikko %></h1>
+        <form action="<%= toiminto %>" method="POST">
+            <p>
+                <label for="tunniste">Tunniste</label><br>
+                <input type="text" id="tunniste" name="tunniste" size="5" value="<%= tunniste.arvo %>"
+                    <%= tunniste.readonly %>>
+            </p>
+            <p>
+                <label for="nimi">Nimi</label><br>
+                <input type="text" id="nimi" name="nimi" size="15" value="<%= nimi.arvo %>"
+                    <%= nimi.readonly %>>
+            </p>
+            <p>
+                <label for="tyyppi">Tyyppi</label><br>
+                <input type="text" id="tyyppi" name="tyyppi" size="15" value="<%= tyyppi.arvo %>"
+                    <%= tyyppi.readonly %>>
+            </p>
+            <p>
+                <label for="hinta">Hinta</label><br>
+                <input type="text" id="hinta" name="hinta" size="10" value="<%= hinta.arvo %>"
+                    <%= hinta.readonly %>>
+            </p>
+            <p>
+                <label for="lukumaara">Lukumäärä</label><br>
+                <input type="text" id="lukumaara" name="lukumaara" size="15" value="<%= lukumaara.arvo %>"
+                    <%= lukumaara.readonly %>>
+            </p>
+            <button class="submit" type="submit">Lähetä</button>
+        </form>
+    </main>
+    <a href="/"><button class="backButton">Valikkoon</button></a>
+
+</body>
+
+</html>

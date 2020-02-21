@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tyylit.css">
+    <title><%= paaotsikko %></title>
+</head>
+
+<body>
+    <main>
+        <h2><%= otsikko %></h2>
+        <form action="<%= toiminto %>" method="post">
+            <p>
+                <label for="koneenTunniste">Tietokoneen tunniste:</label>
+                <input type="text" id="koneenTunniste" name="koneenTunniste" size="5" />
+                <button class="submit" type="submit">Lähetä</button>
+            </p>
+        </form>
+    </main>
+    <a href="/"><button class="backButton">Valikkoon</button></a>
+</body>
+
+</html>
